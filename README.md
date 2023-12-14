@@ -154,7 +154,7 @@ Attention, if the machine where the UE-non3GPP is being configured does not have
 </p>
 
 ## Testing SAMURAI-IoT-Access components
-After performing the [installation](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#steps-installation) of the Proto6G components, we will test if the components were configured correctly. Open new terminal on the machine where UE-non3GPP was installed, go to the ``/root/go/src/UE-non3GPP `` dir and run the following command ``go run cmd/main.go ue``. After executing the command, the expected result is something similar to the one shown in the following figure.
+After performing the [installation](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#steps-installation) of the SAMURAI-IoT-Access components, we will test if the components were configured correctly. Open new terminal on the machine where UE-non3GPP was installed, go to the ``/root/go/src/UE-non3GPP `` dir and run the following command ``go run cmd/main.go ue``. After executing the command, the expected result is something similar to the one shown in the following figure.
 <p align="center">
     <img src="images/ue_start.png"/> 
 </p>
@@ -224,7 +224,7 @@ In experimental scenarios, where the UE-non3GPP + 5GC connection procedures are 
 * In MongoDB CLI type `` use free5gc `` to connect to free5gc base.
 * Type `` db.dropDatabase() `` to completely delete the 5gc database.
 
-After deleting the database, [initialize 5GC](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#initializing-the-5gc-functions), [initialize API Server](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#initializing-the-5gc-api-server), [initialize N3IWF](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#start-n3iwf), [register UE-non3GPP](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#register-ue-non3gpp-into-5gc) and [test SAMURAI-IoT-Access components](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#testing-proto6g-components).
+After deleting the database, [initialize 5GC](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#initializing-the-5gc-functions), [initialize API Server](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#initializing-the-5gc-api-server), [initialize N3IWF](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#start-n3iwf), [register UE-non3GPP](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#register-ue-non3gpp-into-5gc) and [test SAMURAI-IoT-Access components](https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access#testing-samurai-iot-access-components).
 
 
 
