@@ -97,6 +97,7 @@ source ~/.bashrc
 Edit the ```n3iwf-install.yml``` and replace the following markers with their respective IP addresses:
 * ```<<IP-address-for-IKE-communication-visible-to-UEnon3GPP>>```: This parameter must be replaced by the IP address of the machine where the N3IWF was installed, it must be visible to UEnon3GPP and will be used for communication and subsequent establishment of communication tunnels for the data and control planes. 
 * ```<<5G-core-ip-address-for-connection-to-AMF>>```: This parameter must be replaced by the IP address of the machine where free5GC was installed. It will be used to establish communication between N3IWF and the AMF for subsequent validation of UE-non3GPP access credentials and construction of communication tunnels for the data and control planes. 
+* ```<<N3IWF-IP-address-for-communication-with-UPF>>```: This parameter must be replaced by the N3IWF IP address, which must be visible by the UPF (free5GC). It will be used for bi-directional communication between N3IWF and UP when building the GTP tunnel for user data plane communication traffic. 
 
 Run the following Ansible playbook to install N3IWF (password for sudo is required):
 ```
