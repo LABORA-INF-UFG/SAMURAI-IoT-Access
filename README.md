@@ -130,3 +130,14 @@ source ~/.bashrc
 
 Edit the ```ue-non3gpp-install.yml``` and replace the following markers with their respective IP addresses:
 * ```<<IP-address-for-IKE-communication-with-n3iwf>>```:  This parameter must be replaced by the N3IWF IP address, visible to UE-non3GPP, to establish UDP communication for initial communication to establish communication tunnels for the data and control planes.
+* ```<<IP-address-of-UEnon3GPP-visible-to-n3iwf>>```:  This parameter must be replaced by the UEnon3GPP IP address. The address must be visible to N3IWF and will be used for bidirectional communication during the tunnel construction process for data and control plane communication traffic.
+
+
+Run the following Ansible playbook to install UE-non3GPP (password for sudo is required):
+```
+cd SAMURAI-IoT-Access && ansible-playbook -K ue-non3gpp-install.yml
+```
+Wait a few seconds for Ansible to finish configuring the UE-non3GPP. The result of the execution should look something like the one shown in the figure below.
+<p align="center">
+    <img src="images/uenon3gpp_ansible_result.png"/> 
+</p>

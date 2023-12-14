@@ -22,7 +22,7 @@
             GRE_TUN_INTERFACE: "gretun"
             N3IWF_IKE_IP_ADDRESS: "<<IP-address-for-IKE-communication-with-n3iwf>>"
             N3IWF_IKE_PORT: "500"
-            UE_NON3GPP_IP_ADDR: "20.20.0.11"
+            UE_NON3GPP_IP_ADDR: "<<IP-address-of-UEnon3GPP-visible-to-n3iwf>>"
             GO_SRC_DIR : "/root/go/src"
             UE_NON3GPP_PORT_UDP_CONNECTION: "500"
             LABORA_UE_NON3GPP_GIT_REPO: "https://github.com/LABORA-INF-UFG/UE-non3GPP.git"
