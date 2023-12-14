@@ -29,7 +29,7 @@
             N3IWF_IPSEC_INTERFACE_NAME: "ipsec0"
             N3IWF_IP_SEC_INTERFACE_MARK: "5"
             N3IWF_NAS_TCP_PORT: "20000"
-            AMF_NGAP_IP_ADDRESS: "10.10.10.2"
+            AMF_NGAP_IP_ADDRESS: "<<5G-core-ip-address-for-connection-to-AMF>>"
             N3IWF_AMF_SCTP_PORT: "38412"
             
         tasks:
