@@ -20,7 +20,7 @@
             IPSEC_INTERFACE_MARK: "5"
             IPSEC_INTERFACE: "ipsec0"
             GRE_TUN_INTERFACE: "gretun"
-            N3IWF_IKE_IP_ADDRESS: "20.20.0.10"
+            N3IWF_IKE_IP_ADDRESS: "<<IP-address-for-IKE-communication-with-n3iwf>>"
             N3IWF_IKE_PORT: "500"
             UE_NON3GPP_IP_ADDR: "20.20.0.11"
             GO_SRC_DIR : "/root/go/src"

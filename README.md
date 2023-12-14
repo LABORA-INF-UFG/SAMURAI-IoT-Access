@@ -39,7 +39,7 @@ git clone https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access.git
 
 Install GOLang 1.14.4:
 ```
-cd SAMURAI-IoT-Access &&  ansible-playbook -K golang-install.yml
+cd SAMURAI-IoT-Access &&  ansible-playbook -K golang-1.14-install.yml
 source ~/.bashrc
 ```
 
@@ -90,7 +90,7 @@ git clone git clone https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access.git
 
 Install GOLang 1.14.4:
 ```
-cd SAMURAI-IoT-Access &&  ansible-playbook -K golang-install.yml
+cd SAMURAI-IoT-Access &&  ansible-playbook -K golang-1.14-install.yml
 source ~/.bashrc
 ```
 
@@ -109,3 +109,24 @@ After installing the N3IWF and with the 5GC properly initialized (see instructio
 <p align="center">
     <img src="images/n3iwf_start.png"/> 
 </p>
+
+#### 3º UE-non3GPP
+Access via terminal the machine where the UE-non3GPP will be executed. 
+Install python + git + ansible:
+```
+sudo apt update && apt -y install python && sudo apt -y install git && sudo apt -y install ansible
+```
+
+Clone this repository:
+```
+git clone https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access.git
+```
+
+Install GOLang 1.21.3:
+```
+cd SAMURAI-IoT-Access &&  ansible-playbook -K golang-1.21-install.yml
+source ~/.bashrc
+```
+
+Edit the ```ue-non3gpp-install.yml``` and replace the following markers with their respective IP addresses:
+* ```<<IP-address-for-IKE-communication-with-n3iwf>>```:  This parameter must be replaced by the N3IWF IP address, visible to UE-non3GPP, to establish UDP communication for initial communication to establish communication tunnels for the data and control planes.
