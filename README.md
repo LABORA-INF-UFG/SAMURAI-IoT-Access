@@ -18,6 +18,9 @@ This repository describes steps for installing the elements that make up SAMURAI
 * Disk: 20 GB
 
 ## SAMURAI-IoT-Access components installation
+
+Before starting the installation, it is necessary to edit the ```5gc-install.yml```, ```n3iwf-install.yml``` and ```ue-non3gpp-install.yml``` files, informing the respective IP addresses where each of the artifacts will be deployed in the variable declaration structure.
+
 The installation steps for each of the 3 components are described below. 
 **Attention: All installation steps described below must be performed with root privileges (SUDO SU).**
 
@@ -44,3 +47,12 @@ Run ```ifconfig``` and get the name of **internet network interface**, that prov
 <p align="center">
     <img src="images/if_config.png"/> 
 </p>
+
+This interface that will be used by the UPF to provide internet access to the UE's registered in the 5GC.
+Edit the ```5gc-install.yml``` and replace the ```<<IP-address-visible-to-n3iwf>>``` marker with the IP address of the machine where the core is being deployed, and which must be visible to n3iwf.
+
+Run the following Ansible playbook (password for sudo is required):
+```
+cd SAMURAI-IoT-Access && ansible-playbook -K 5gc-install.yml -e  "internet_network_interface=<< internet network interface name>>"
+```
+
