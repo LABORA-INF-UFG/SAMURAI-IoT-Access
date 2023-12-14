@@ -49,6 +49,7 @@ Run ```ifconfig``` and get the name of **internet network interface**, that prov
 </p>
 
 This interface that will be used by the UPF to provide internet access to the UE's registered in the 5GC.
+
 Edit the ```5gc-install.yml``` and replace the ```<<IP-address-visible-to-n3iwf>>``` marker with the IP address of the machine where the core is being deployed, and which must be visible to n3iwf.
 
 Run the following Ansible playbook (password for sudo is required):
