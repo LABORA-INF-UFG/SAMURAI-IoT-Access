@@ -75,3 +75,30 @@ After initializing the microservices that control the data and control planes, i
 <p align="center">
     <img src="images/5gc_api_start.png"/> 
 </p>
+
+#### 2º N3IWF (Free5gc)
+Access via terminal the machine where the N3IWF will be executed. 
+Install python + git + ansible:
+```
+sudo apt update && apt -y install python && sudo apt -y install git && sudo apt -y install ansible
+```
+
+Clone this repository:
+```
+git clone git clone https://github.com/LABORA-INF-UFG/SAMURAI-IoT-Access.git
+```
+
+Install GOLang 1.14.4:
+```
+cd SAMURAI-IoT-Access &&  ansible-playbook -K golang-install.yml
+source ~/.bashrc
+```
+
+Edit the ```n3iwf-install.yml``` and replace the following markers with their respective IP addresses:
+* ```<<IP-address-for-IKE-communication-visible-to-UEnon3GPP>>```: This parameter must be replaced by the IP address of the machine where the N3IWF was installed, it must be visible to UEnon3GPP and will be used for communication and subsequent establishment of communication tunnels for the data and control planes. 
+* ```<<5G-core-ip-address-for-connection-to-AMF>>```: This parameter must be replaced by the IP address of the machine where free5GC was installed. It will be used to establish communication between N3IWF and the AMF for subsequent validation of UE-non3GPP access credentials and construction of communication tunnels for the data and control planes. 
+
+Run the following Ansible playbook to install N3IWF (password for sudo is required):
+```
+cd SAMURAI-IoT-Access && ansible-playbook -K n3iwf-install.yml
+```

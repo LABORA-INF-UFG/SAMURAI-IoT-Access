@@ -29,7 +29,6 @@
             N3IWF_IPSEC_INTERFACE_NAME: "ipsec0"
             N3IWF_IP_SEC_INTERFACE_MARK: "5"
             N3IWF_NAS_TCP_PORT: "20000"
-            N3IWF_GTP_BIND_ADDRESS: "10.10.10.1"
             AMF_NGAP_IP_ADDRESS: "10.10.10.2"
             N3IWF_AMF_SCTP_PORT: "38412"
             
