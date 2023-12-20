@@ -1,5 +1,5 @@
 # SAMURAI-IoT-Access
-This repository describes steps for installing the elements that make up SAMURAI-IoT-Access (UE-non3GPP + N3IWF + Free5gc). The installation process involves 3 different machines 1st responsible for running 5GC, 2nd responsible for running N3IWF and 3rd responsible for running UE-non3GPP. The main objective is to provide communication with IoT devices and the 5G core.
+This repository describes steps for installing the elements that make up SAMURAI-IoT-Access (UE-non3GPP + N3IWF + Free5gc). The installation process involves 3 different machines 1st responsible for running 5GC, 2nd responsible for running N3IWF and 3rd responsible for running UE-non3GPP. The main objective is to provide communication between IoT devices and the 5G core, enabling the construction of a scenario similar to the one illustrated in the following figure.
 
 <p align="center">
     <img src="images/SAMURAI_IoT_Access.png"/> 
